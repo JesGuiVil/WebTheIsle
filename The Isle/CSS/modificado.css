@@ -1,0 +1,171 @@
+
+#logointro {
+    width: 80%;
+}
+
+#frase {
+    width: 90px;
+}
+
+* {
+    --bg-voscuro: #132a13;
+    --bg-vpuro: #31572c;
+    --bg-verde: #4f772d;
+    --bg-verdesito: #90a955;
+    --bg-marillo: #ecf39e;
+}
+
+* {
+    --text-voscuro: #132a13;
+    --text-vpuro: #31572c;
+    --text-verde: #4f772d;
+    --text-verdesito: #90a955;
+    --text-marillo: #ecf39e;
+}
+
+.text-voscuro {
+    color: var(--text-voscuro);
+}
+
+.text-vpuro {
+    color: var(--text-vpuro);
+}
+
+.text-verde {
+    color: var(--text-verde);
+}
+
+.text-verdesito {
+    color: var(--text-verdesito);
+}
+
+.text-marillo {
+    color: var(--text-marillo);
+}
+
+.bg-voscuro {
+    background-color: var(--bg-voscuro);
+}
+
+.bg-vpuro {
+    background-color: var(--bg-vpuro);
+}
+
+.bg-verde {
+    background-color: var(--bg-verde);
+}
+
+.bg-verdesito {
+    background-color: var(--bg-verdesito);
+}
+
+.bg-marillo {
+    background-color: var(--bg-marillo);
+}
+
+@font-face {
+    font-family: "Jurassic Park";
+    src: url("../fonts/jurassic_park.ttf") format("truetype");
+}
+.jurasic {
+    font-family: "Jurassic Park", sans-serif;
+}
+@font-face {
+    font-family: "Leto";
+    src: url("../fonts/LetoSans-Regular.ttf") format("truetype");
+}
+.leto {
+    font-family: "Leto", sans-serif;
+}
+
+.separado {
+    word-spacing: 0.1em;
+
+}
+
+.vueltaArriba {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #163001;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.vueltaArriba:hover {
+    opacity: 1;
+}
+.hervi {
+    cursor: pointer;
+}
+.carni {
+    cursor: pointer;
+}
+.search-bar {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    width: 110px;
+    height: 35px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    height: 25px;
+}
+
+.card-text {
+    height: 120px;
+    overflow: auto;
+}
+.table {
+    border: 1px solid #ecf39e;; /* Cambia "red" al color que desees */
+}
+
+
+@media (min-width: 768px) and (max-width: 995px) {
+    .card-text {
+        height: 180px;
+        overflow: auto;
+    }
+}
+@media (min-width: 996px) and (max-width: 1024px) {
+    .card-text {
+            height: 180px;
+            overflow: auto;
+    }
+}
+@media (min-width: 1024px){
+    .card-text {
+        height: 180px;
+        overflow: auto;
+    }
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#logoafter {
+    max-width: 200px; 
+}
+.textoafter{
+    max-width: 600px;
+}

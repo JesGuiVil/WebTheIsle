@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Isle</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../CSS/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/modificado.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script defer src="../JS/theisle.js" type="text/javascript"></script>
+    <script defer src="../JS/bootstrap.bundle.js" type="text/javascript"></script>
+    <link href="../img/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body class="bg-verdesito text-voscuro leto">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-voscuro text-verdesito " id="inicio">
+            <div class="container-fluid">
+                <a class="navbar-brand text-verdesito" href="index.html">
+                    <img src="../img/The_isle_icon.jpg" alt="Logo" width="50" height="50" class=" align-text-center" />
+                    THE ISLE
+                </a>
+                <button class="navbar-toggler bg-voscuro text-verdesito" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-verdesito" href="gallery.html">Galería de dinosaurios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-verdesito" href="contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-verdesito" href="us.html">Conócenos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <input type="search-bar">
+                    <i class=" btn bi bi-search"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container px-1 py-1">
+        <img id="logointro" class="d-block mx-auto mb-5" src="../img/The_Isleblack.png" alt="logotipo">
+        <h2 class="display-3 jurasic">INTRODUCCION</h2>
+        <div class="col-lg-12 mx-auto py-1 mb-5">
+            <p class="lead">THE ISLE es un survival multijugador de dinosaurios. No de humanos contra
+                dinosaurios... sino de dinosaurios contra dinosaurios!<br>
+                Comenzamos como una cría de la especie que seleccionemos y tenemos que ingeniarnosla para
+                sobrevivir.<br> Conforme pasa el tiempo vamos creciendo,
+                pero si morimos perdemos TODO progreso y tendremos que empezar de 0.<br>Para mantenernos sanos tendremos
+                que conseguir alimento y agua
+                por una isla tropical en la que convivimos con otros 99 jugadores en la misma situación que nosotros.
+                Ahí es donde empieza lo interesante...<br>
+                Habrá jugadores controlando dinosaurios carnívoros que necesitarán comerse a otros jugadores para mantenerse con
+                vida. También habrá jugadores que maten a otros simplemente por diversión, o ambas cosas a la vez ( no te fies de nadie).
+                Este hecho sumado al alto precio de morir ofrece una experiencia muy tensa e inmersiva que te hace sentir 
+                que siempre hay algo observándote desde la maleza... o bajo el agua del río en el que vas a beber.<br>
+                Pero no todo es hostilidad! también encontrarás jugadores con los que entablar amistad y formar grupos para intentar cazar o
+                 defenderos de los depredadores.<br>
+                Cada dinosaurio tarda un tiempo determinado en crecer. Los mas grandes y fuertes tardan mas tiempo en llegar a su edad adulta,
+                 y requieren mas alimento al día, lo que implica estar mas tiempo expuesto al peligro. Tambien suelen ser mas lentos.
+                 Así que no pienses que el mas grande tiene la vida mas fácil. Todos los dinosaurios tienen sus ventajas e incovenientes,
+                  por lo que no hay uno "mejor" que otro en cuanto al objetivo del juego: SOBREVIVIR.
+                <br> Si finalmente llegas a la edad adulta, no creas que se acaba el juego, la historia acaba de empezar.
+                Podemos buscar pareja y poner huevos de los que nazcan otros jugadores para crear manadas, explorar los secretos que esconde el mapa, 
+                dedicarte a ayudar a otro jugadores o divertirte haciéndoles la vida imposible.
+                pero recuerda, siempre hay un pez mas grande en el mar... y si mueres, empezarás de 0.<br><br> Sea como sea,
+                tu historia la escribes tu.
+            </p>
+        </div>
+    </div>
+    <div class="container px-1 py-1 ">
+        <h2 class=" jurasic display-3 separado">INTERFAZ DE USUARIO</h2>
+    </div>
+    <div class="container py-1" id="icon-grid">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-1">
+            <div class="col d-flex align-items-start">
+                <img class="p-2" src="../img/comida.jpg" width="50px" height="50px"></img>
+                <div>
+                    <h3 class="fw-bold mb-2 fs-4">Comida</h3>
+                    <p class="p-2 bg-vpuro rounded text-marillo">Indica lo lleno que tienes el estómago. Se recupera comiendo.<br>Si comes en exceso
+                        puedes
+                        vomitar y perder toda la comida que ingeriste y sus nutrientes.<br>Si llega a 0 empezarás a
+                        perder salud.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img class="p-2" src="../img/agua.jpg" width="50px" height="50px"></img>
+                <div>
+                    <h3 class="fw-bold mb-2 fs-4">Agua</h3>
+                    <p class="p-2 bg-vpuro rounded text-marillo">Indica tu hidratación. Se recupera bebiendo.<br>Se vacía mas rápido que la comida y
+                        se mantiene
+                        si esta lloviendo.<br> Si llega a 0 empezarás a perder salud.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img class="p-2" src="../img/energia.jpg" width="50px" height="50px"></img>
+                <div>
+                    <h3 class="fw-bold mb-2 fs-4">Energía</h3>
+                    <p class="p-2 bg-vpuro rounded text-marillo">Indica la cantidad de energía que te queda para correr, saltar, nadar y luchar.<br>
+                        Se recupera
+                        lentamente caminando. Si te sientas a descansar se recuperará mas rápido.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img class="p-2" src="../img/Diet_Symbols.jpg" width="50px" height="50px"></img>
+                <div>
+                    <h3 class="fw-bold mb-2 fs-4">Dieta</h3>
+                    <p class="p-2 bg-vpuro rounded text-marillo">Indica los nutrientes de los que dispones.<br>Cada alimento aporta un nutriente
+                        distinto.<br>Afectan a tu crecimiento y dan ciertos beneficios segun la combinación de
+                        nutrientes.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img class="p-2" src="../img/salud.jpg" width="50px" height="50px"></img>
+                <div>
+                    <h3 class="fw-bold mb-2 fs-4">Salud</h3>
+                    <p class="p-2 bg-vpuro rounded text-marillo">Indica la salud de tu dinosaurio.<br>Perderás salud por golpes de caídas, ataques de
+                        otros
+                        dinosaurios, hambre o sed.<br>Se recupera lentamente cuando ya no estas sufriendo daño. Si te sientas a descansar, te sanarás mas rápido.<br>Si llega a 0, mueres.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img class="p-2" src="../img/sangre.jpg" width="50px" height="50px"></img>
+                <div>
+                    <h3 class="fw-bold mb-2 fs-4">Sangre</h3>
+                    <p class="p-2 bg-vpuro rounded text-marillo">Indica la sangre de tu dinosaurio. Perderás sangre al sufrir hemorragias provocadas
+                        por ciertos
+                        ataques.
+                        <br>Puedes revolcarte en el barro para tapar tus heridas y parar el sangrado temporalmente.<br>
+                        Si llega a 0, mueres.
+                    </p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img class="p-2" src="../img/fractura.jpg" width="50px" height="50px"></img>
+                <div>
+                    <h3 class="fw-bold mb-2 fs-4">Fracturas</h3>
+                    <p class="p-2 bg-vpuro rounded text-marillo">Indica si tienes algun hueso roto.<br>Son provocadas por caídas o ciertos
+                        ataques. Limitan tu movilidad, impidiendote correr, saltar o realizar ciertos ataques, dependiendo de que parte del cuerpo sufra la fractura.<br>Se curan
+                        manteniendo reposo.
+                    </p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img class="p-2" src="../img/coords.jpg" width="50px" height="50px"></img>
+                <div>
+                    <h3 class="fw-bold mb-2 fs-4">Coordenadas</h3>
+                    <p class="p-2 bg-vpuro rounded text-marillo">Indica tu posición en la isla.<br>Aunque es la única referencia que el juego nos da
+                        sobre nuestra ubicación, existe una web con los mapas interactivos, donde podemos pegar las coordenadas y ver donde estamos.
+                         <a class="text-body-secondary text-warning confirma" href="https://vulnona.com/game/the_isle/"
+                        target="_blank"><br>click aqui</a> para ver los mapas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-1">
+        <h2 class=" jurasic display-3 separado">ELIGE TU BANDO</h2>
+    </div>
+    <div class="container col-xxl-12 px-4 py-3">
+        <div class="row  align-items-center py-1 g-2 bg-voscuro hervi">
+            <div class="col-12 col-sm-12 col-lg-6">
+                <img src="../img/tenonto.jpg" class="d-block mx-lg-auto img-fluid " alt="imagen tenonto"
+                    loading="lazy">
+            </div>
+            <div class="col-lg-6 bg-voscuro text-marillo">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-1 text-center">HERBIVOROS</h1>
+                <p class="p-4">Los herviboros se alimentan de plantas y frutos del entorno por lo que la
+                    alimentación no es un gran problema.
+                    Esta ventaja les permite formar manadas mixtas que viajan por el mapa en busca de distintas plantas
+                    para complementar su dieta.
+                    Esto consigue simular un sistema de migraciones.
+                    <br>Si prefieres jugar en comunidad y darlo todo por los tuyos, este es tu equipo.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="container col-xxl-12 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center py-1 g-2 bg-voscuro carni">
+            <div class="col-12 col-sm-12 col-lg-6 ">
+                <img src="../img/Tyrannosaurus_The_Isle_2020.jpg" class="d-block mx-lg-auto img-fluid "
+                    alt="imagen rex" loading="lazy">
+            </div>
+            <div class="col-lg-6 bg-voscuro text-marillo">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-1 text-center">CARNIVOROS</h1>
+                <p class="p-4">Los carnivoros cazan a otros jugadores para sobrevivir.
+                    <br>Dependiendo de la especie y su metabolismo, necesitará una determinada cantidad de alimento
+                    diario.<br>
+                    Aunque puedan trabajar en equipo para conseguir una presa, luego tendrán que compartirla, por lo que
+                    el tamaño de sus grupos se ve limitado
+                    por el consumo de sus individuos.<br> Si te gusta el desafío que supone cazar y prefieres jugar solo
+                    o con un par de amigos, este es tu equipo.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <a href="#inicio" class="btn btn-dark vueltaArriba"><i class="bi bi-arrow-up-circle"></i></a>
+    <footer class="d-flex justify-content-between align-items-center py-3 px-3 flex-nowrap bg-voscuro">
+        <div class="col-md-4 d-flex flex-nowrap align-items-center">
+            <a href="index.html" class=" me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <img src="../img/The_isle_icon.jpg" alt="Logo" width="50" height="50" class=" align-text-center" />
+            </a>
+            <span id="frase" class="mb-md-0 text-body-secondary fw-semibold text-verdesito">© The Isle</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-4">
+            <li class="ms-3"><a class="text-body-secondary confirma" href="https://discord.gg/survivetheisle"
+                    target="_blank"><img src="../img/discord.png" alt="Logo discord" width="50" height="50"
+                        class=" align-text-center" /></a></li>
+            <li class="ms-3"><a class="text-body-secondary confirma" href="https://store.steampowered.com/app/376210/The_Isle/"
+                    target="_blank"><img src="../img/steam.com.png" alt="Logo steam" width="50" height="50"
+                        class=" align-text-center" /></a></li>
+            <li class="ms-3"><a class="text-body-secondary confirma" href="https://www.twitch.tv/directory/game/The%20Isle"
+                    target="_blank"><img src="../img/twitch.png" alt="Logo twitch" width="50" height="50"
+                        class=" align-text-center" /></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
