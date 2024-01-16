@@ -1,4 +1,3 @@
-
 #logointro {
     width: 80%;
 }
@@ -99,11 +98,20 @@
 .vueltaArriba:hover {
     opacity: 1;
 }
+.carni {
+    cursor: pointer;
+}
 .hervi {
     cursor: pointer;
 }
-.carni {
-    cursor: pointer;
+.hervi:hover {
+    transform: scale(1.05);
+}
+.carni:hover {
+    transform: scale(1.05);
+}
+#curva {
+    border-radius: 2vw;
 }
 .search-bar {
     position: absolute;
@@ -163,9 +171,11 @@
     object-fit: cover;
     z-index: -1;
 }
+
 #logoafter {
     max-width: 200px; 
 }
+
 .textoafter{
     max-width: 600px;
 }
