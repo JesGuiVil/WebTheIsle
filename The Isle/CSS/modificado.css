@@ -96,19 +96,19 @@
     color:var(--bg-voscuro);
 }
 .fondoindex {
-    background-image: url('/img/gateway.jpg'); 
+    background-image: url('../img/gateway.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 .fondogallery {
-    background-image: url('/img/pradera.jpg'); 
+    background-image: url('../img/pradera.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 .fondocontact {
-    background-image: url('/img/pantano.png'); 
+    background-image: url('../img/pantano.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
