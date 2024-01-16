@@ -142,6 +142,16 @@
 .carni:hover {
     transform: scale(1.05);
 }
+
+.enlace {
+    text-decoration: none;
+    color: var(--bg-marillo);
+    cursor: auto;
+}
+.enlace:hover {
+    color: var(--bg-voscuro);
+}
+
 #curva {
     border-radius: 2vw;
 }
