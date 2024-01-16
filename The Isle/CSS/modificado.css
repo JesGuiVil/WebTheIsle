@@ -1,5 +1,5 @@
 #logointro {
-    width: 80%;
+    width: 45vw;
 }
 
 #frase {
@@ -20,6 +20,12 @@
     --text-verde: #4f772d;
     --text-verdesito: #90a955;
     --text-marillo: #ecf39e;
+}
+
+.alfa {
+    color: var(--bg-marillo);
+    background-color: rgba(19, 42, 19, .9);
+    border-radius: 2vh;
 }
 
 .text-voscuro {
@@ -80,6 +86,32 @@
 .separado {
     word-spacing: 0.1em;
 
+}
+.enlace{
+    text-decoration: none;
+    color: var(--bg-marillo);
+    cursor: pointer;
+}
+.enlace:hover{
+    color:var(--bg-voscuro);
+}
+.fondoindex {
+    background-image: url('/img/gateway.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fondogallery {
+    background-image: url('/img/pradera.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fondocontact {
+    background-image: url('/img/pantano.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .vueltaArriba {
