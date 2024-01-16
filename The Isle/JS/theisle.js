@@ -1,4 +1,15 @@
+/*
+Script para redireccionar al ususario cuando pulse el icono de búsqueda, haya o no haya texto introducido
+*/
+document.getElementById("busqueda").addEventListener("click", function () {
+  let contenido = document.getElementById("busquedaTexto").value;
 
+  if (contenido.trim() === "") {
+      window.location.href = "https://www.amazon.com/Dinosaur-Pedro-Pedrosaurus-Boys-T-Shirt/dp/B092ZNG4ZH";
+  } else {
+      window.location.href = "https://fivesjs.skipser.com/trex-game/";
+  }
+});
 /*
 estos scripts hacen que el div de herviboros y carnivoros del index actuen 
 como un enlace al apartado correspondiente de la pagina "galeria de dinosaurios"
@@ -67,14 +78,3 @@ este es el escript que aparece en el pdf de clase para la validacion de formular
     }, false);
   });
 })();
-
-
-
-
-
-
-
-
-
-
-
